@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Fun and Probabilities</string>
+    <string name="tab_text1">Tab 1</string>
+    <string name="tab_text2">Tab 2</string>
+    <string name="tab_text3">Tab 3</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment1">Hello blank fragment1</string>
+    <string name="hello_blank_fragment2">Hello blank fragment2</string>
+    <string name="hello_blank_fragment3">Hello blank fragment3</string>
+    <string name="button">Button</string>
+</resources>
