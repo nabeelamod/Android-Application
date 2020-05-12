@@ -23,6 +23,10 @@ public class PageAdapter extends FragmentPagerAdapter {
                 return new tab2();
             case 2:
                 return new tab3();
+            case 3:
+                return new tab4();
+            case 4:
+                return new tab5();
             default:
                 return null;
         }

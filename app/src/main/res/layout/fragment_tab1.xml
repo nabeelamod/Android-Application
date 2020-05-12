@@ -115,7 +115,7 @@
         android:id="@+id/outputGuesses"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Already Guessed: None"
+        android:text="Already Guessed: "
         android:textColor="#3F51B5"
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"

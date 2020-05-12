@@ -9,30 +9,27 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:id="@+id/imageDice2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="100dp"
-        android:padding="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/rollBtn1"
+    <EditText
+        android:id="@+id/userPalInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:gravity="center"
+        android:inputType="text"
+        android:text="abba"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/enterPal"
+        app:layout_constraintVertical_bias="0.197" />
 
     <TextView
-        android:id="@+id/title3"
+        android:id="@+id/title1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Dice"
+        android:text="Palindrome Checker"
         android:textColor="#3F51B5"
         android:textColorHighlight="#4CAF50"
         android:textColorHint="#E91E63"
@@ -43,53 +40,45 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rollBtn1"
+        android:id="@+id/checker4"
         android:layout_width="110dp"
         android:layout_height="55dp"
         android:background="@android:color/holo_blue_dark"
-        android:onClick="onClickRollBtn3"
+        android:onClick="onClickCheckBtn4"
         android:shadowColor="#F44336"
-        android:text="Roll"
+        android:text="Check"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.52"
+        app:layout_constraintTop_toBottomOf="@+id/userPalInput"
+        app:layout_constraintVertical_bias="0.127"
         tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/diceSum3"
+        android:id="@+id/outputPal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="156dp"
-        android:text="Roll Sum:"
-        android:textColor="#FF5722"
-        android:textSize="26sp"
+        android:text="Enter Palindrome Above"
+        android:textColor="#3F51B5"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rollBtn1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/checker4"
+        app:layout_constraintVertical_bias="0.096" />
 
-    <ImageView
-        android:id="@+id/imageDice1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="100dp"
-        android:padding="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/rollBtn1"
+    <TextView
+        android:id="@+id/enterPal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter Palindrome to check:"
+        app:layout_constraintBottom_toTopOf="@+id/button1"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.0" />
-
+        app:layout_constraintTop_toBottomOf="@+id/title1"
+        app:layout_constraintVertical_bias="0.205" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

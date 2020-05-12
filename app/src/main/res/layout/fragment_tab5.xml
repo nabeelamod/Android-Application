@@ -9,30 +9,37 @@
 
     <!-- TODO: Update blank fragment layout -->
 
-    <ImageView
-        android:id="@+id/imageDice2"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="100dp"
-        android:padding="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/rollBtn1"
+    <TextView
+        android:id="@+id/catergories5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name / Place / Animal / Thing"
+        android:textColor="#2196F3"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/letter5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/title5"
+        app:layout_constraintVertical_bias="0.273" />
 
     <TextView
-        android:id="@+id/title3"
+        android:id="@+id/lettersDone"
+        android:layout_width="371dp"
+        android:layout_height="92dp"
+        android:text="(GAME 1) Done:"
+        android:textColor="#2196F3"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/startRound" />
+
+    <TextView
+        android:id="@+id/title5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
-        android:text="Dice"
+        android:text="Scattergories"
         android:textColor="#3F51B5"
         android:textColorHighlight="#4CAF50"
         android:textColorHint="#E91E63"
@@ -43,53 +50,50 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/rollBtn1"
+        android:id="@+id/startRound"
         android:layout_width="110dp"
         android:layout_height="55dp"
+        android:layout_marginBottom="120dp"
         android:background="@android:color/holo_blue_dark"
-        android:onClick="onClickRollBtn3"
+        android:onClick="onClickStartBtn5"
         android:shadowColor="#F44336"
         android:text="Roll"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
+        app:layout_constraintTop_toBottomOf="@+id/diceSum3"
         app:layout_constraintVertical_bias="0.52"
         tools:ignore="OnClick" />
 
     <TextView
-        android:id="@+id/diceSum3"
+        android:id="@+id/letter5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="156dp"
-        android:text="Roll Sum:"
+        android:text="Round Letter"
         android:textColor="#FF5722"
-        android:textSize="26sp"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/rollBtn1"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toBottomOf="@+id/title5"
+        app:layout_constraintVertical_bias="0.297" />
 
-    <ImageView
-        android:id="@+id/imageDice1"
-        android:layout_width="150dp"
-        android:layout_height="150dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_marginBottom="100dp"
-        android:padding="15dp"
-        app:layout_constraintBottom_toTopOf="@+id/rollBtn1"
+    <TextView
+        android:id="@+id/countDown5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Countdown: "
+        android:textColor="#960000"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/startRound"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title3"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toBottomOf="@+id/letter5"
+        app:layout_constraintVertical_bias="0.341" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
